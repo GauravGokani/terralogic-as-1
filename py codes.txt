@@ -1,0 +1,178 @@
+1. Write a python program to swap two numbers using a third variable
+a=10
+
+b=20
+
+temp=a
+
+a=b
+
+b=temp
+
+
+print(a)
+print(b)
+
+2. Write a python program to swap two numbers without using third variable
+
+a=10
+
+b=20
+
+a,b=b,a
+
+print(a)
+print(b)
+
+3. Write a python program to read two numbers and find the sum of their cubes
+a=10
+
+b=20
+
+temp=a **3+b**3
+
+print(temp)
+
+4. Write a python program to read three numbers and if any two variables are equal , print that number
+
+a = 33
+
+b = 3303
+
+c = 333
+
+if a == b or a == c or b==c:
+
+  print("yes")
+
+else:
+  
+  print("no")
+
+5. Write a python program to read three numbers and find the smallest among them
+
+a = 33
+
+b = 322
+
+c = 333
+
+if a > b and c>b :
+
+  print("b is smallest",b)
+
+elif b>a and c>a:
+
+  print("a is smallest",a)
+
+else:
+
+    print(c)
+
+6. Write a python program to read three numbers and print them in ascending order (with out using sort function)
+
+a = 3333
+
+b = 22
+
+c = 333
+
+if a > b and c>b :
+
+
+    if a>c:
+
+        print(b,c,a)
+
+    else:
+
+        print(b,a,c)
+
+elif a > c and b>c :
+
+
+    if a>b:
+
+        print(c,b,a)
+
+    else:
+
+        print(c,a,b)
+
+else:
+
+    if b>c:
+
+        print(a,c,b)
+
+    else:
+
+        print(a,b,c)
+        
+
+
+7. Write a python program to read radius of a circle and print the area
+r = 10
+
+area=3.14*r**2
+
+print(area)
+
+8. Write a python program to read four numbers (representing the four octets of an IP) and check whether they all are in the range between 0 to 255
+   
+a=111
+b=211
+c=231
+d=123
+
+if(a<=255) and (b<=255) and (c<=255)and (d<=255) :
+    print("yes in range")
+else:
+    print("not in range ")
+
+
+9. In the above program, if all numbers are in the valid range, print which class of IP it is.
+
+a=241
+b=211
+c=231
+d=123
+
+if(a<=255) and (b<=255) and (c<=255)and (d<=255) :
+    print("yes in range")
+    if 1<=a<= 126 and 0<=b<= 255 and  0<=c<= 255 and  1<=a<= 254:
+        print("class A")
+    elif 128<=a<= 191 and 1<=b<= 255 and  0<=c<= 255 and  1<=a<= 254:
+        print("class B")
+    elif 192<=a<= 223 and 0<=b<= 255 and  1<=c<= 254 and  1<=a<= 254:
+        print("class C")
+    elif 224<=a<= 239 and 0<=b<= 255 and  0<=c<= 255 and  0<=a<= 255:
+        print("class D")
+    else:
+        print("class E")
+
+
+
+else:
+    print("not in range ")
+
+
+
+10. Write a python program to read a number ,if it is an even number , 
+print the square of that number and if it is odd number print cube of that number.
+
+a = 10
+
+if a%2==0:
+
+    print(a**2)
+
+else:
+
+    print(a**3)
+   
+
+
+     
+
+     

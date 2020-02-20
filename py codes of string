@@ -1,0 +1,149 @@
+1. Write a python program find the number of characters present in a string (with out using len())
+
+
+counter = 0
+str=input("enter the string")
+for s in str:
+      counter = counter+1
+print("Length of the input string is:", counter)
+
+
+2. Write a python program to count the number occurrences all vowels present in a string
+
+counter = 0
+str=input("enter the string")
+
+vowels=0
+number=0
+
+for i in str:
+      if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+            vowels=vowels+1
+
+      elif(i=='0' or i=='1' or i=='2' or i=='3' or i=='4' or i=='5' or i=='6' or i=='7' or i=='8' or i=='9' ):\
+          number=number+1
+
+      else:
+          pass
+
+
+print("Number of vowels are:")
+print(vowels)
+print("Number of numbers are:")
+print(number)
+
+
+3. Write a python program to find common characters presents in two words
+
+str=input("enter the string")
+str1=input("enter the second string")
+
+
+
+for i in str:
+    for j in str1:
+        if(i==j):
+            print(i,end=" ")
+
+4. Write a python program to check the given string is palindrome or not
+
+a="gaurav"
+
+
+
+b=  a.__len__()
+c=a[::-1]
+print(c)
+if b==c:
+    print(" yes it is palli")
+else:
+    print("no it is not")
+
+5. Write a python program to convert alternate characters to capital letters
+
+
+string ="hello this is gaurav"
+
+for j in range(0,string.__len__()):
+    if(j%2!=0):
+        s=string[j].lower()
+        print(s,end=" ")
+    else:
+        s1=string[j].upper()
+        print(s1,end=" ")
+
+6. Write a python program to read an IP address from stdin and check whether it is valid or not
+
+''' 
+ip=input("enter your id ")
+
+a=ip.split(".")
+for i in range(0, len(a)):
+    a[i] = int(a[i])
+
+print(a)
+
+if(a[0]<=255) and (a[1]<=255) and (a[2]<=255)and (a[3]<=255) :
+    print("yes this ip is in range")
+else:
+    print(" no this ip is not  in range")
+
+
+
+
+Interface ethernet0 is up
+
+Interface ethernet1 is down
+
+Interface serial0 is down
+
+Interface serial1 is up '''
+
+7.1 Write a python program to find out how many interface are “up” (from the above input).
+
+
+s="Interface ethernet0 is up Interface ethernet1 is down Interface serial0 is down Interface serial1 is up"
+a=s.split(" ")
+print(a)
+c=0
+for i in range (0,a.__len__()):
+    if(a[i]=='up'):
+        c=c+1
+print(c ,"interfaces are up")
+
+
+
+7.2 Write a python program print the interface names of all interfaces which are up.
+
+s="Interface ethernet0 is up Interface ethernet1 is down Interface serial0 is down Interface serial1 is up"
+a=s.split(" ")
+print(a)
+
+for i in range (0,a.__len__()):
+    if(a[i]=='up'):
+        print(a[i-2],"interfaces are up")
+       
+
+
+
+
+8. Write a python program to read a date (dd-mm-yyyy) and print the month name according the month number.
+
+date=12
+month=1
+year=1997
+if month==1:
+    print(date,"jan",year)
+
+
+9. Write a python program to reverse a string without using builtin methods
+
+
+
+b=  a.__len__()
+c=a[::-1]
+print(c)
+
+
+
+

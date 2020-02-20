@@ -1,0 +1,94 @@
+1. Write a python program to print the value of a given key 
+
+a = { 'Router1' :'1.1.1.1' 	}
+key_list = list(a.keys())
+val_list = list(a.values())
+
+print(key_list[val_list.index('1.1.1.1')])
+print(val_list[key_list.index('Router1')])
+
+2. Write a python program to check whether the given key is present, if present print the value , else add a new key and value
+
+a = { 'Router1' :'1.1.1.1' 	}
+key_list = list(a.keys())
+val_list = list(a.values())
+
+print(key_list[val_list.index('1.1.1.1')])
+print(val_list[key_list.index('Router1')])
+
+for i in range (0,key_list.__len__()):
+    if(key_list[i]=='outer1'):
+        print("present")
+    else:
+        key_list.append("aa")
+        val_list.append("a121")
+
+res = dict(zip(key_list,val_list))
+print(res)
+
+
+
+
+3. Write a python program to find status of a given interface
+
+a = { 'E0' :['1.1.1.1','up' ],'E1' :['2.2.2.2','down' ],'S0' :['3.3.3.3','up' ],'S1' :['4.4.4.4','down' ]	}
+key_list = list(a.keys())
+val_list = list(a.values())
+x=input("enter the interface name who's status you want to check")
+print (a[x][1])
+
+
+
+4. Write a python program to find interface and IP of all interfaces which are up
+
+a = { 'E0' :['1.1.1.1','up' ],'E1' :['2.2.2.2','down' ],'S0' :['3.3.3.3','up' ],'S1' :['4.4.4.4','down' ]	}
+
+key_list = list(a.keys())
+val_list = dict(a.values())
+
+key_list1 = list(val_list.keys())
+val_list1 = list(val_list.values())
+
+
+print(key_list)
+print(val_list)
+print(key_list1)
+print(val_list1)
+
+print()
+
+for i in range (0,key_list.__len__()):
+    if(val_list1[i]=='up'):
+        print(key_list[i],"is the interface with status up and it's ip is ",key_list1[i])
+
+
+5. Write a python program to count how many ethernet interfaces are there
+
+a = { 'E0' :['1.1.1.1','up' ],'E1' :['2.2.2.2','down' ],'E2' :['5.2.2.2','down' ],'S0' :['3.3.3.3','up' ],'S1' :['4.4.4.4','down' ]	}
+key_list = list(a.keys())
+
+str1 = " "
+for ele in key_list:
+    str1 += ele
+print(str1)
+
+
+res = {i : str1.count(i) for i in set(str1)}
+print (res['E'])
+
+
+
+6. Write a python program to add a new entry to above database
+
+a = { 'E0' :['1.1.1.1','up' ],'E1' :['2.2.2.2','down' ],'E2' :['5.2.2.2','down' ],'S0' :['3.3.3.3','up' ],'S1' :['4.4.4.4','down' ]	}
+key_list = list(a.keys())
+val_list = list(a.values())
+
+key_list.append("s2")
+val_list.append(['6.6.6.6','up'])
+
+res = dict(zip(key_list,val_list))
+print(res)
+
+
+

@@ -1,0 +1,118 @@
+1. Write a python program to find the sum of all numbers in a list
+
+l=[1,2,3,4]
+sum=0
+for i in range (0,l.__len__()):
+    sum=sum+l[i]
+print(sum)
+
+
+2. Write a python program to find largest number in a given list with out using max() 
+
+
+l=[1,2,3,4,21]
+max=l[1]
+for i in range (0,l.__len__()):
+    if(max<l[i]):
+        max=l[i]
+print(max)
+
+
+3. Write a python program to find the common numbers from two lists 
+
+l=[22,32,43,23,12,11]
+l1=[23,322,45,11,54]
+for i in range (0,l.__len__()):
+    for j in range(0,l1.__len__()):
+        if(l[i]==l1[j]):
+            print(l[i],end=" ")
+
+4. Write a python program to print all even numbers from a given list
+
+l=[2,5,6,1,8,7,9]
+for i in range (0,l.__len__()):
+    if(l[i]%2==0):
+        print(l[i], end=" ")
+
+5. Write a python program to create a list of even numbers and another list of odd numbers from a given list
+
+
+l=[2,5,6,1,8,7,9]
+l1=[]
+l2=[]
+for i in range (0,l.__len__()):
+    if(l[i]%2==0):
+        l1.append(l[i])
+    else:
+        l2.append(l[i])
+
+print(l1,"list of even numbers present in list")
+print(l2)
+
+6. Write a python program to remove repeated elements from a given list without using built-in methods
+
+
+l=[2,3,2]
+l1=[]
+for n in l:
+    if n not in l1:
+        l1.append(n)
+print(l1)
+
+
+7. Write a python program to find the longest word in a given sentence
+
+
+s="this is the man with powers and "
+s1=s.split()
+print(s1)
+c=" "
+for i in range (0,s1.__len__()):
+    if(c.__len__()<s1[i].__len__()):
+        c=s1[i]
+print(c)
+
+8. Write a python program to find number of occurrences of given number with out using built-in methods
+
+l=[2,3,4,5,2,3,3,5,9,8,6,4]
+s=0
+n=3
+for i in range(0,l.__len__()):
+    if(l[i]==n):
+        s=s+1
+print(n,"is repeated ",s ,"times")
+
+9. ["www.zframez.com", "www.wikipedia.org", "www.asp.net", "www.abcd.in"]
+
+Write a python program to print website suffixes (com , org , net ,in) from this list
+
+
+l= ["www.zframez.com", "www.wikipedia.org", "www.asp.net", "www.abcd.in"]
+
+
+
+s=[]
+for i in range (0,l.__len__()):
+    s=l[i].split('.')
+    print(s[s.__len__()-1],end=" ,")
+
+
+
+10. Write a python program to sort a given list of numbers with out using sort() function
+
+
+l=[3,5,4,3,6,7,4,9,8,6,1]
+temp=0
+for i in range (0,l.__len__()):
+    for j in range(i+1,l.__len__()):
+
+        if(l[i]>l[j]):
+            temp = l[i];
+
+            l[i] = l[j];
+
+            l[j] = temp
+print(l)
+
+
+

@@ -1,0 +1,185 @@
+1. Write a python program to print the square of all numbers from 0 to 10
+
+for a in range(10):
+
+
+	print (a**2, end=" ")
+
+
+2. Write a python program to find the sum of all even numbers from 0 to 10
+
+s=0
+
+for a in range(10):
+
+    if a%2==0:
+
+        print(a, end=" ")
+
+        s=s+a
+
+print ( "sum of even no's is  ",s)
+  
+
+
+3. Write a python program to read three numbers (a,b,c) and check how many numbers between a and b are divisible by c
+
+a=11
+
+b=20
+
+c=3
+
+s=0
+
+for i in range(a,b):
+
+    if i%c==0:
+
+        s=s+1
+
+        print(i, end=" ")
+
+
+print ( " no's divisible by c is   ",s)    
+
+4. Write a python program to get the following output
+
+1-----99
+
+2-----98
+
+
+a=1
+
+b=10
+
+
+for i in range(a,b):
+
+    print(i,"---",b-i)
+
+5. Write a python program to read a number and print the binary of that number 
+(hint: if a is a string , a[::-1] will be reverse of that string)
+
+a=111
+
+print(bin(a))
+
+6. Write a python program to read four numbers (representing the four octets of an IP) and print the next five IP address
+
+a=255
+b=255
+c=255
+d=253
+for i in range (1,5):
+    if(d<255):
+        d=d + 1
+        print(a,".",b,".",c,".",d)
+    elif(c<255):
+        c=c+1
+        d=0
+        print(a, ".", b, ".", c, ".", d)
+    elif (b < 255):
+        b=b+1
+        c=0
+        d=0
+        print(a, ".", b, ".", c, ".", d)
+    elif (a < 255):
+        a=a+1
+        print(a, ".", b, ".", c, ".", d)
+    else:
+        print("no more id can be add")
+
+7. Write a python program to print the factorial of a given number
+  a=4
+s=1
+for i in range(a):
+    s=a*i
+print(s)
+
+8. Write a python program to print the first 10 numbers Fibonacci series
+
+a=0
+b=1
+s=0
+for i in range (0,10):
+    s=a+b
+    print(s)
+    a=b
+    b=s
+
+9. Write a python program to read a number and print a right triangle using "*"
+
+Eg :
+
+Input : 5
+
+----------Output---------
+
+*
+
+* *
+
+* * *
+
+* * * *
+
+* * * * *
+
+n=int(input("enter the number "))
+for i in range (0,n):
+    for j in range(0,i):
+        print("* ",end="")
+
+    print("   ")
+
+10. Write a python program to check given number is prime or not
+
+
+
+        for n in range(2, val):
+            if (val % n) == 0:
+                break
+        else:
+            print(val)
+
+11. Write a python program to print all prime numbers between 0 to 100 , and print how many prime numbers are there.
+a=1
+b=10
+c=0
+for val in range(a, b + 1):
+
+
+    if val > 1:
+        for n in range(2, val):
+            if (val % n) == 0:
+                break
+        else:
+            print(val)
+12. a, b, c = 0, 0, 0 . Write a python program to print all permutations using those three variables
+
+Output : 000 , 001 ,002, 003, 004, 0005 ,006, 007, 008, 009, 010, 011 …… 999
+
+a=0
+b=0
+c=0
+
+for i in range (999):
+
+    if(c<9):
+        c=c + 1
+        print(a,b,c)
+    elif(b<9):
+        b=b+1
+        c=0
+        print(a,  b, c )
+    else :
+        a=a+1
+        b=0
+        c=0
+        print(a,  b, c)
+
+
+
+        
